@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Informações</title>
+
+    <link rel="stylesheet" href="{% static 'portal/css/info.css' %}?v=3">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="{% static 'portal/img/logo2.png' %}" alt="Logo">
+
+            <span>Cabo Verde</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'informacoes' %}">Informações</a></li>
+            <li><a href="{% url 'jogadores' %}">Jogadores</a></li>
+            <li><a href="{% url 'conquistas' %}">Conquistas</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="informacoes">
+
+    <h2>Dados da Seleção</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>País</h3>
+
+            <p>Cabo Verde</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Federação</h3>
+
+            <p>Federação Cabo-Verdiana de Futebol</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Técnico</h3>
+
+            <p>Bubista</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Estádio</h3>
+
+            <p>Estádio Nacional de Cabo Verde</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Continente</h3>
+
+            <p>África</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Ranking FIFA</h3>
+
+            <p>64ª</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="curiosidades">
+
+    <h2>Curiosidades</h2>
+
+    <ul>
+
+        <li>Primeira participação em uma Copa do Mundo em 2026.</li>
+
+        <li>Conhecida como "Tubarões Azuis". O apelido surgiu em uma votação interna onde os jogadores rejeitaram o nome "tartarugas" por acharem muito lento e escolheram o tubarão, animal muito presente na região</li>
+
+        <li>A maior parte dos jogadores atua em clubes europeus.</li>
+
+        <li>A seleção é filiada à FIFA desde 1986.</li>
+
+        <li>Com aproximadamente 560 mil habitantes, fica atrás apenas da Islândia em número de habitantes em Copas.</li>
+
+    </ul>
+
+</section>
+
+</main>
+
+</body>
+
+</html>

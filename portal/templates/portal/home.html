@@ -1,0 +1,190 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Cabo Verde</title>
+
+    <link rel="stylesheet" href="{% static 'portal/css/home.css' %} ?v=3">
+
+</head>
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="{% static 'portal/img/logo2.png' %}" alt="Logo">
+            <span>Cabo Verde</span>
+        </div>
+
+        <ul class="menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'informacoes' %}">Informações</a></li>
+            <li><a href="{% url 'jogadores' %}">Jogadores</a></li>
+            <li><a href="{% url 'conquistas' %}">Conquistas</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- Hero -->
+    <section class="hero">
+
+    <img src="{% static 'portal/img/banner.jpg' %}" alt="Banner">
+
+    <div class="hero-overlay">
+
+        <h1>CABO VERDE</h1>
+
+        <p>
+            A seleção cabo-verdiana participa da Copa do Mundo FIFA 2026 em busca
+            de fazer história e representar o futebol africano na maior competição
+            do planeta.
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- Sobre -->
+    <section class="sobre">
+
+    <div class="titulo">
+
+        <h2>SELEÇÃO</h2>
+
+    </div>
+
+    <div class="conteudo">
+
+        <div class="texto">
+
+            <p>     
+            A Seleção de Cabo Verde, conhecida como <strong>Tubarões Azuis</strong>,
+            representa o país nas competições organizadas pela FIFA e pela Confederação
+            Africana de Futebol (CAF). Após uma grande evolução nas últimas décadas,
+            conquistou sua inédita classificação para a Copa do Mundo FIFA 2026,
+            marcando um momento histórico para o futebol cabo-verdiano.
+
+            </p>
+
+            <div class="info">
+
+                <div>
+
+                    <h4>País</h4>
+
+                    <span>Cabo Verde</span>
+
+                </div>
+
+                <div>
+
+                    <h4>Continente</h4>
+
+                    <span>África</span>
+
+                </div>
+
+                <div>
+
+                    <h4>Primeira Copa</h4>
+
+                    <span>2026</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="imagens">
+
+            <img src="{% static 'portal/img/bandeira2.png' %}" alt="Bandeira">
+
+            <img src="{% static 'portal/img/equipe2.jpg' %}" alt="Equipe">
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Copa -->
+    <section class="copa">
+
+    <div class="titulo">
+
+        <h2>COPA 2026</h2>
+
+    </div>
+
+    <div class="cards">
+
+            <div class="status eliminada">
+
+                <h3>Situação Atual:</h3>
+
+                    <span>Eliminada</span>
+
+                </div>
+
+            </div>
+
+        <div class="resultado">
+
+            <h3>Campanha</h3>
+
+            <div class="partida">
+
+                <span>Cabo Verde x Argentina</span>
+
+                <span>2 x 3</span>
+
+            </div>
+
+            <div class="partida">
+
+                <span>Cabo Verde x Arábia Saudita</span>
+
+                <span>0 x 0</span>
+
+            </div>
+
+            <div class="partida">
+
+                <span>Cabo Verde x Uruguai</span>
+
+                <span>2 x 2</span>
+
+            </div>
+
+            <div class="partida">
+
+                <span>Cabo Verde x Espanha</span>
+
+                <span>0 x 0</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+</footer>
+
+</body>
+</html>

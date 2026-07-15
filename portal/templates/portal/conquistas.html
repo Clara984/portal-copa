@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Títulos</title>
+
+    <link rel="stylesheet" href="{% static 'portal/css/conquistas.css' %}">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="{% static 'portal/img/logo2.png' %}" alt="Logo">
+
+            <span>Cabo Verde</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'informacoes' %}">Informações</a></li>
+            <li><a href="{% url 'jogadores' %}">Jogadores</a></li>
+            <li><a href="{% url 'conquistas' %}">Conquistas</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="cabecalho">
+
+    <h2>Títulos e Campanhas</h2>
+
+    <p>
+        Conheça as principais conquistas e campanhas históricas da Seleção de Cabo Verde ao longo de sua trajetória no futebol internacional.
+    </p>
+
+</section>
+
+<section class="titulos">
+
+    {% for titulo in titulos %}
+
+    <div class="card">
+
+
+        <h3>{{ titulo.competicao }}</h3>
+
+        <span class="resultado">{{ titulo.resultado }}</span>
+
+        <p>{{ titulo.ano }}</p>
+
+    </div>
+
+    {% endfor %}
+
+</section>
+
+</main>
+
+</body>
+
+</html>

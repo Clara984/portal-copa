@@ -1,0 +1,354 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f5f5f5;
+
+}
+
+img{
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+.hero{
+
+    position:relative;
+    height:520px;
+    overflow:hidden;
+
+}
+
+.hero img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:60px;
+
+    letter-spacing:3px;
+
+}
+
+.hero p{
+
+    width:700px;
+    max-width:90%;
+
+    margin-top:20px;
+
+    font-size:18px;
+
+}
+
+.sobre{
+
+    padding:60px 8%;
+
+}
+
+.titulo{
+
+    background:#082b58;
+
+    color:white;
+
+    border-left:8px solid #d93b3b;
+
+    padding:15px;
+
+    margin-bottom:40px;
+
+}
+
+.conteudo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+.texto{
+
+    flex:2;
+
+}
+
+.texto p{
+
+    text-align:justify;
+
+    line-height:1.8;
+
+}
+
+.info{
+
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.info div{
+
+    background:#f4f4f4;
+
+    padding:15px;
+
+    border-radius:6px;
+
+}
+
+.imagens{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.imagens img{
+
+    width:100%;
+
+}
+
+.copa{
+
+    padding:60px 8%;
+
+}
+
+.cards{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+.ultimo-jogo{
+
+    width:30%;
+
+}
+
+
+.campanha{
+
+    flex:1;
+
+}
+
+.partida{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:18px;
+
+    margin-bottom:20px;
+
+    border:1px solid #ccc;
+
+}
+.resultado{
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    margin: 50px;
+
+}
+
+.resultado h4{
+
+    color:#082b58;
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.resultado p{
+
+    color:#666;
+
+    margin-bottom:20px;
+
+}
+
+.resultado span{
+
+    display:inline-block;
+
+    background:#082b58;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+/* ===================== NAVBAR ===================== */
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 8%;
+
+    background: rgba(8, 43, 88, 0.65);
+    backdrop-filter: blur(8px);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo span{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:8px 14px;
+
+    border-radius:6px;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    background:rgba(255,255,255,.15);
+
+    color:red;
+}
+
+.status{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    text-transform:uppercase;
+
+}
+
+.eliminada{
+
+    background:#f8d7da;
+
+    color:#b22222;
+
+    border:1px solid #d93b3b;
+
+}

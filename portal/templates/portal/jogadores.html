@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jogadores</title>
+
+    <link rel="stylesheet" href="{% static 'portal/css/jogadores.css' %}?v=2">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="{% static 'portal/img/logo2.png' %}" alt="Logo">
+
+            <span>Cabo Verde</span>
+
+        </div>
+
+        <ul class="menu">
+
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'informacoes' %}">Informações</a></li>
+            <li><a href="{% url 'jogadores' %}">Jogadores</a></li>
+            <li><a href="{% url 'conquistas' %}">Conquistas</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section class="cabecalho">
+
+    <h2>Elenco</h2>
+
+    <p>
+        Jogadores convocados para representar Cabo Verde na Copa do Mundo FIFA 2026.
+    </p>
+
+</section>
+
+<section class="jogadores">
+
+    {% for jogador in jogadores %}
+
+    <div class="card">
+
+        <img src="{{ jogador.foto.url }}" alt="{{ jogador.nome }}">
+
+        <div class="numero">
+
+            #{{ jogador.numero }}
+
+        </div>
+
+        <h3>{{ jogador.nome }}</h3>
+
+        <p>{{ jogador.get_posicao_display }}</p>
+
+        <span>{{ jogador.clube }}</span>
+
+        <small>{{ jogador.idade }} anos</small>
+
+    </div>
+
+    {% endfor %}
+
+</section>
+
+</main>
+
+</body>
+
+</html>
